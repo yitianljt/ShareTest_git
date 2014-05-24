@@ -8,7 +8,7 @@
 
 #include "LayerGame.h"
 #include "Common.h"
-
+#include "PlayVideo.h"
 #include "GameControl.h"
 
 
@@ -34,9 +34,14 @@ bool LayerGame::init()
     addChild(layerBg,0);
     CCSprite* spNormal = CCSprite::create();
     CCMenuItemSprite* btnStart = CCMenuItemSprite::create(spNormal,spNormal,this,menu_selector(LayerGame::callbackStart));
-    
     btnStart->setPosition(ccp(sizeWin.width/2,sizeWin.height/2));
-    layerBg->addChild(btnStart);
+    
+    CCMenuItemLabel* menuItem = CCMenuItemLabel::create(CCLabelTTF::create("播放视频", "黑体", 40), this, menu_selector(LayerGame::callbackStart));
+    
+    CCMenu* menu = CCMenu::create(menuItem,NULL);
+    
+    menu->setPosition(ccp(sizeWin.width/2, sizeWin.height/2));
+    this->addChild(menu);
     
     
     
@@ -58,7 +63,7 @@ void LayerGame::onExit()
 
 void LayerGame::callbackStart(CCObject* obj)
 {
-    CCDirector::sharedDirector()->replaceScene(GameControl::scene(kSceneGame));
+    PlayVideo::playVideo("opening_video.mp4",(CCLayer*)this);
 }
 
 

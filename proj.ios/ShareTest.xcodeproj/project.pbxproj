@@ -240,6 +240,11 @@
 		A9A782331928D49B001D1936 /* SceneGame.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A9A782311928D49B001D1936 /* SceneGame.cpp */; };
 		A9A782361928D4F5001D1936 /* LayerGame.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A9A782341928D4F5001D1936 /* LayerGame.cpp */; };
 		A9A7828919302F61001D1936 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9A7828819302F61001D1936 /* MediaPlayer.framework */; };
+		A9A7828C19307D30001D1936 /* VideoPlatform.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A9A7828A19307D30001D1936 /* VideoPlatform.cpp */; };
+		A9A78291193084F9001D1936 /* PlayVideo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A9A7828F193084F9001D1936 /* PlayVideo.cpp */; };
+		A9A7829419308D6C001D1936 /* PlayVideo_ios.mm in Sources */ = {isa = PBXBuildFile; fileRef = A9A7829319308D6C001D1936 /* PlayVideo_ios.mm */; };
+		A9A7829719308EF1001D1936 /* IOSVideoController.mm in Sources */ = {isa = PBXBuildFile; fileRef = A9A7829519308EF1001D1936 /* IOSVideoController.mm */; };
+		A9A7829919309515001D1936 /* opening_video.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = A9A7829819309515001D1936 /* opening_video.mp4 */; };
 		BF171245129291EC00B8313A /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF170DB012928DE900B8313A /* OpenGLES.framework */; };
 		BF1712461292920000B8313A /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BF170DB212928DE900B8313A /* libxml2.dylib */; };
 		BF1712471292920000B8313A /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BF170DB412928DE900B8313A /* libz.dylib */; };
@@ -748,6 +753,14 @@
 		A9A782351928D4F5001D1936 /* LayerGame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LayerGame.h; path = ../Classes/LayerGame.h; sourceTree = "<group>"; };
 		A9A78287193021ED001D1936 /* Common.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Common.h; path = ../Classes/Common.h; sourceTree = "<group>"; };
 		A9A7828819302F61001D1936 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		A9A7828A19307D30001D1936 /* VideoPlatform.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = VideoPlatform.cpp; path = ../Classes/VideoPlatform.cpp; sourceTree = "<group>"; };
+		A9A7828B19307D30001D1936 /* VideoPlatform.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VideoPlatform.h; path = ../Classes/VideoPlatform.h; sourceTree = "<group>"; };
+		A9A7828F193084F9001D1936 /* PlayVideo.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PlayVideo.cpp; path = ../Classes/PlayVideo.cpp; sourceTree = "<group>"; };
+		A9A78290193084F9001D1936 /* PlayVideo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PlayVideo.h; path = ../Classes/PlayVideo.h; sourceTree = "<group>"; };
+		A9A7829319308D6C001D1936 /* PlayVideo_ios.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = PlayVideo_ios.mm; path = ../Classes/PlayVideo_ios.mm; sourceTree = "<group>"; };
+		A9A7829519308EF1001D1936 /* IOSVideoController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = IOSVideoController.mm; path = ../Classes/IOSVideoController.mm; sourceTree = "<group>"; };
+		A9A7829619308EF1001D1936 /* IOSVideoController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IOSVideoController.h; path = ../Classes/IOSVideoController.h; sourceTree = "<group>"; };
+		A9A7829819309515001D1936 /* opening_video.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = opening_video.mp4; sourceTree = "<group>"; };
 		BF170DB012928DE900B8313A /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		BF170DB212928DE900B8313A /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
 		BF170DB412928DE900B8313A /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
@@ -1737,6 +1750,7 @@
 		78C7DDAA14EBA5050085D0C2 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				A9A7829819309515001D1936 /* opening_video.mp4 */,
 				1AFAF8B916D35E4900DB1158 /* CloseNormal.png */,
 				1AFAF8BA16D35E4900DB1158 /* CloseSelected.png */,
 				1AFAF8BB16D35E4900DB1158 /* HelloWorld.png */,
@@ -1765,10 +1779,16 @@
 		A9A782281928C97C001D1936 /* GameScene */ = {
 			isa = PBXGroup;
 			children = (
+				A9A7828E19308448001D1936 /* android */,
+				A9A7828D19308440001D1936 /* ios */,
 				A9A782311928D49B001D1936 /* SceneGame.cpp */,
 				A9A782321928D49B001D1936 /* SceneGame.h */,
 				A9A782341928D4F5001D1936 /* LayerGame.cpp */,
 				A9A782351928D4F5001D1936 /* LayerGame.h */,
+				A9A7828A19307D30001D1936 /* VideoPlatform.cpp */,
+				A9A7828B19307D30001D1936 /* VideoPlatform.h */,
+				A9A7828F193084F9001D1936 /* PlayVideo.cpp */,
+				A9A78290193084F9001D1936 /* PlayVideo.h */,
 			);
 			name = GameScene;
 			sourceTree = "<group>";
@@ -1782,6 +1802,23 @@
 				A9A7822E1928CE01001D1936 /* LayerLaunch.h */,
 			);
 			name = GameLaunch;
+			sourceTree = "<group>";
+		};
+		A9A7828D19308440001D1936 /* ios */ = {
+			isa = PBXGroup;
+			children = (
+				A9A7829319308D6C001D1936 /* PlayVideo_ios.mm */,
+				A9A7829519308EF1001D1936 /* IOSVideoController.mm */,
+				A9A7829619308EF1001D1936 /* IOSVideoController.h */,
+			);
+			name = ios;
+			sourceTree = "<group>";
+		};
+		A9A7828E19308448001D1936 /* android */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = android;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1859,6 +1896,7 @@
 				D4EF949E15BD2D9600D803EB /* Icon-72.png in Resources */,
 				D4EF94A015BD2D9800D803EB /* Icon-144.png in Resources */,
 				D41A0AD1160F154A004552AE /* Default-568h@2x.png in Resources */,
+				A9A7829919309515001D1936 /* opening_video.mp4 in Resources */,
 				D446FD6E16102124000ADA7B /* Default@2x.png in Resources */,
 				15A3D9961682F7F9002FB0C5 /* CMakeLists.txt in Resources */,
 				1AFAF8BC16D35E4900DB1158 /* CloseNormal.png in Resources */,
@@ -1915,6 +1953,7 @@
 				15A3D9201682F7D5002FB0C5 /* b2DistanceJoint.cpp in Sources */,
 				15A3D9211682F7D5002FB0C5 /* b2FrictionJoint.cpp in Sources */,
 				15A3D9221682F7D5002FB0C5 /* b2GearJoint.cpp in Sources */,
+				A9A7828C19307D30001D1936 /* VideoPlatform.cpp in Sources */,
 				15A3D9231682F7D5002FB0C5 /* b2Joint.cpp in Sources */,
 				15A3D9241682F7D5002FB0C5 /* b2MouseJoint.cpp in Sources */,
 				A9A7822C1928C9BD001D1936 /* SceneLaunch.cpp in Sources */,
@@ -2036,6 +2075,8 @@
 				1AB87035175E0A84005D39BF /* WebSocket.cpp in Sources */,
 				1A9CE8781765A12C000E3062 /* AssetsManager.cpp in Sources */,
 				379BB99517F03F3700829B88 /* CCActionFrame.cpp in Sources */,
+				A9A7829719308EF1001D1936 /* IOSVideoController.mm in Sources */,
+				A9A78291193084F9001D1936 /* PlayVideo.cpp in Sources */,
 				379BB99617F03F3700829B88 /* CCActionFrameEasing.cpp in Sources */,
 				379BB99717F03F3700829B88 /* CCActionManager.cpp in Sources */,
 				379BB99817F03F3700829B88 /* CCActionNode.cpp in Sources */,
@@ -2094,6 +2135,7 @@
 				A9A782231928C5B5001D1936 /* GameControl.cpp in Sources */,
 				379BB9CF17F03F3700829B88 /* json_value.cpp in Sources */,
 				379BB9D117F03F3700829B88 /* json_writer.cpp in Sources */,
+				A9A7829419308D6C001D1936 /* PlayVideo_ios.mm in Sources */,
 				379BB9D317F03F3700829B88 /* GUIReader.cpp in Sources */,
 				379BB9D417F03F3700829B88 /* SceneReader.cpp in Sources */,
 			);
@@ -2117,6 +2159,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -2167,6 +2210,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
 				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
