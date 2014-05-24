@@ -27,14 +27,22 @@ bool LayerLaunch::init()
         return false;
     }
     
-    
-    CCLayerColor* layerBg = CCLayerColor::create(ccc4(255, 255, 255, 255), sizeWin.width/2, sizeWin.height/2);
+
+    CCLayerColor* layerBg = CCLayerColor::create(ccc4(255, 0, 0, 255), sizeWin.width, sizeWin.height);
+
     addChild(layerBg,0);
     CCSprite* spNormal = CCSprite::create();
+    CCMenuItemLabel* btnItem = CCMenuItemLabel::create(CCLabelTTF::create("开始游戏", "黑体", 40), this
+                                                       , menu_selector(LayerLaunch::callbackStart));
     CCMenuItemSprite* btnStart = CCMenuItemSprite::create(spNormal,spNormal,this,menu_selector(LayerLaunch::callbackStart));
     
-    btnStart->setPosition(ccp(sizeWin.width/2,sizeWin.height/2));
-    layerBg->addChild(btnStart);
+    //btnStart->setPosition(ccp(sizeWin.width/2,sizeWin.height/2));
+    
+    CCMenu* menu = CCMenu::create(btnItem,NULL);
+    menu->setPosition(ccp(sizeWin.width/2,sizeWin.height/2));
+    layerBg->addChild(menu, 1);
+    
+    //layerBg->addChild(btnStart);
     
     
     return true;
@@ -43,12 +51,18 @@ bool LayerLaunch::init()
 }
 
 void LayerLaunch::onEnter()
-{}
+{
+    CCLayer::onEnter();
+}
 void LayerLaunch::onExit()
 {}
 
 void LayerLaunch::callbackStart(CCObject* obj)
 {
+    CCLog("callbackStart");
     CCDirector::sharedDirector()->replaceScene(GameControl::scene(kSceneGame));
 }
+
+
+
 

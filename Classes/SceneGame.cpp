@@ -7,7 +7,7 @@
 //
 
 #include "SceneGame.h"
-
+#include "LayerGame.h"
 USING_NS_CC;
 
 SceneGame::SceneGame()
@@ -25,8 +25,12 @@ bool SceneGame::init()
     if (BaseComScene::init()) {
         //launch场景
         
+        LayerGame* layerBg = LayerGame::create();
+        this->addChild(layerBg,0);
         
+        return true;
     }
+    return false;
 }
 
 void SceneGame::onEnter()

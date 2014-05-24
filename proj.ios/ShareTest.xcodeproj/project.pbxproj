@@ -239,6 +239,7 @@
 		A9A7822F1928CE01001D1936 /* LayerLaunch.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A9A7822D1928CE01001D1936 /* LayerLaunch.cpp */; };
 		A9A782331928D49B001D1936 /* SceneGame.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A9A782311928D49B001D1936 /* SceneGame.cpp */; };
 		A9A782361928D4F5001D1936 /* LayerGame.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A9A782341928D4F5001D1936 /* LayerGame.cpp */; };
+		A9A7828919302F61001D1936 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9A7828819302F61001D1936 /* MediaPlayer.framework */; };
 		BF171245129291EC00B8313A /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF170DB012928DE900B8313A /* OpenGLES.framework */; };
 		BF1712461292920000B8313A /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BF170DB212928DE900B8313A /* libxml2.dylib */; };
 		BF1712471292920000B8313A /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BF170DB412928DE900B8313A /* libz.dylib */; };
@@ -746,6 +747,7 @@
 		A9A782341928D4F5001D1936 /* LayerGame.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = LayerGame.cpp; path = ../Classes/LayerGame.cpp; sourceTree = "<group>"; };
 		A9A782351928D4F5001D1936 /* LayerGame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LayerGame.h; path = ../Classes/LayerGame.h; sourceTree = "<group>"; };
 		A9A78287193021ED001D1936 /* Common.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Common.h; path = ../Classes/Common.h; sourceTree = "<group>"; };
+		A9A7828819302F61001D1936 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
 		BF170DB012928DE900B8313A /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		BF170DB212928DE900B8313A /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
 		BF170DB412928DE900B8313A /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
@@ -769,6 +771,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A9A7828919302F61001D1936 /* MediaPlayer.framework in Frameworks */,
 				15A3DA6A1682F886002FB0C5 /* libcocos2dx.a in Frameworks */,
 				1ACB3244164770DE00914215 /* libcurl.a in Frameworks */,
 				1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */,
@@ -1416,6 +1419,7 @@
 		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A9A7828819302F61001D1936 /* MediaPlayer.framework */,
 				1ACB3243164770DE00914215 /* libcurl.a */,
 				BF170DB212928DE900B8313A /* libxml2.dylib */,
 				BF170DB412928DE900B8313A /* libz.dylib */,

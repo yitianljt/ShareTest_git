@@ -8,6 +8,7 @@
 
 #include "GameControl.h"
 #include "SceneLaunch.h"
+#include "SceneGame.h"
 
 USING_NS_CC;
 BaseComScene* GameControl::scene(SceneTag tag)
@@ -18,7 +19,9 @@ BaseComScene* GameControl::scene(SceneTag tag)
         case kSceneLaunch:
         scene = SceneLaunch::create();
         break;
-        
+        case kSceneGame:
+        scene = SceneGame::create();
+        break;
         default:
         break;
     }

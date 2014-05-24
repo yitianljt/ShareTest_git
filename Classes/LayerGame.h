@@ -10,6 +10,7 @@
 #define __ShareTest__LayerGame__
 
 #include <iostream>
+#include "Common.h"
 #include "cocos2d.h"
 
 
@@ -18,8 +19,7 @@ class LayerGame:public cocos2d::CCLayer
     public:
     LayerGame();
     ~LayerGame();
-    
-    virtual bool init();
+    COM_CREATE_FUNC(LayerGame);
     
     virtual void onEnter();
     virtual void onExit();
