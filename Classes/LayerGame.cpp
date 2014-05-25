@@ -15,6 +15,7 @@
 USING_NS_CC;
 
 
+
 COM_CREATE_FUNC_IMPL(LayerGame);
 
 

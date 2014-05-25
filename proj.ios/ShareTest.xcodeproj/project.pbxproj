@@ -245,6 +245,10 @@
 		A9A7829419308D6C001D1936 /* PlayVideo_ios.mm in Sources */ = {isa = PBXBuildFile; fileRef = A9A7829319308D6C001D1936 /* PlayVideo_ios.mm */; };
 		A9A7829719308EF1001D1936 /* IOSVideoController.mm in Sources */ = {isa = PBXBuildFile; fileRef = A9A7829519308EF1001D1936 /* IOSVideoController.mm */; };
 		A9A7829919309515001D1936 /* opening_video.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = A9A7829819309515001D1936 /* opening_video.mp4 */; };
+		A9A7829E1931C730001D1936 /* HTP1_4.png in Resources */ = {isa = PBXBuildFile; fileRef = A9A7829B1931C730001D1936 /* HTP1_4.png */; };
+		A9A7829F1931C730001D1936 /* HTP2_4.png in Resources */ = {isa = PBXBuildFile; fileRef = A9A7829C1931C730001D1936 /* HTP2_4.png */; };
+		A9A782A01931C730001D1936 /* HTP3_4.png in Resources */ = {isa = PBXBuildFile; fileRef = A9A7829D1931C730001D1936 /* HTP3_4.png */; };
+		A9A782A31931C761001D1936 /* GuideLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A9A782A11931C761001D1936 /* GuideLayer.cpp */; };
 		BF171245129291EC00B8313A /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF170DB012928DE900B8313A /* OpenGLES.framework */; };
 		BF1712461292920000B8313A /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BF170DB212928DE900B8313A /* libxml2.dylib */; };
 		BF1712471292920000B8313A /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BF170DB412928DE900B8313A /* libz.dylib */; };
@@ -761,6 +765,11 @@
 		A9A7829519308EF1001D1936 /* IOSVideoController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = IOSVideoController.mm; path = ../Classes/IOSVideoController.mm; sourceTree = "<group>"; };
 		A9A7829619308EF1001D1936 /* IOSVideoController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IOSVideoController.h; path = ../Classes/IOSVideoController.h; sourceTree = "<group>"; };
 		A9A7829819309515001D1936 /* opening_video.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = opening_video.mp4; sourceTree = "<group>"; };
+		A9A7829B1931C730001D1936 /* HTP1_4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = HTP1_4.png; sourceTree = "<group>"; };
+		A9A7829C1931C730001D1936 /* HTP2_4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = HTP2_4.png; sourceTree = "<group>"; };
+		A9A7829D1931C730001D1936 /* HTP3_4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = HTP3_4.png; sourceTree = "<group>"; };
+		A9A782A11931C761001D1936 /* GuideLayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = GuideLayer.cpp; path = ../Classes/GuideLayer.cpp; sourceTree = "<group>"; };
+		A9A782A21931C761001D1936 /* GuideLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GuideLayer.h; path = ../Classes/GuideLayer.h; sourceTree = "<group>"; };
 		BF170DB012928DE900B8313A /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		BF170DB212928DE900B8313A /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
 		BF170DB412928DE900B8313A /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
@@ -1750,6 +1759,9 @@
 		78C7DDAA14EBA5050085D0C2 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				A9A7829B1931C730001D1936 /* HTP1_4.png */,
+				A9A7829C1931C730001D1936 /* HTP2_4.png */,
+				A9A7829D1931C730001D1936 /* HTP3_4.png */,
 				A9A7829819309515001D1936 /* opening_video.mp4 */,
 				1AFAF8B916D35E4900DB1158 /* CloseNormal.png */,
 				1AFAF8BA16D35E4900DB1158 /* CloseSelected.png */,
@@ -1789,6 +1801,8 @@
 				A9A7828B19307D30001D1936 /* VideoPlatform.h */,
 				A9A7828F193084F9001D1936 /* PlayVideo.cpp */,
 				A9A78290193084F9001D1936 /* PlayVideo.h */,
+				A9A782A11931C761001D1936 /* GuideLayer.cpp */,
+				A9A782A21931C761001D1936 /* GuideLayer.h */,
 			);
 			name = GameScene;
 			sourceTree = "<group>";
@@ -1897,12 +1911,15 @@
 				D4EF94A015BD2D9800D803EB /* Icon-144.png in Resources */,
 				D41A0AD1160F154A004552AE /* Default-568h@2x.png in Resources */,
 				A9A7829919309515001D1936 /* opening_video.mp4 in Resources */,
+				A9A7829E1931C730001D1936 /* HTP1_4.png in Resources */,
 				D446FD6E16102124000ADA7B /* Default@2x.png in Resources */,
 				15A3D9961682F7F9002FB0C5 /* CMakeLists.txt in Resources */,
 				1AFAF8BC16D35E4900DB1158 /* CloseNormal.png in Resources */,
 				1AFAF8BD16D35E4900DB1158 /* CloseSelected.png in Resources */,
 				1AFAF8BE16D35E4900DB1158 /* HelloWorld.png in Resources */,
 				379BB9CC17F03F3700829B88 /* json_internalarray.inl in Resources */,
+				A9A782A01931C730001D1936 /* HTP3_4.png in Resources */,
+				A9A7829F1931C730001D1936 /* HTP2_4.png in Resources */,
 				379BB9CD17F03F3700829B88 /* json_internalmap.inl in Resources */,
 				379BB9D017F03F3700829B88 /* json_valueiterator.inl in Resources */,
 				379BB9D217F03F3700829B88 /* sconscript in Resources */,
@@ -1933,6 +1950,7 @@
 				15A3D90C1682F7D5002FB0C5 /* b2Draw.cpp in Sources */,
 				15A3D90D1682F7D5002FB0C5 /* b2Math.cpp in Sources */,
 				15A3D90E1682F7D5002FB0C5 /* b2Settings.cpp in Sources */,
+				A9A782A31931C761001D1936 /* GuideLayer.cpp in Sources */,
 				15A3D90F1682F7D5002FB0C5 /* b2StackAllocator.cpp in Sources */,
 				15A3D9101682F7D5002FB0C5 /* b2Timer.cpp in Sources */,
 				15A3D9111682F7D5002FB0C5 /* b2Body.cpp in Sources */,
