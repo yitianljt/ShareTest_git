@@ -25,13 +25,13 @@ bool SceneGame::init()
 {
     if (BaseComScene::init()) {
         //launch场景
-        /*
+        
         LayerGame* layerBg = LayerGame::create();
         this->addChild(layerBg,0);
-        */
         
-        GuideLayer* layerGuide = GuideLayer::create();
-        this->addChild(layerGuide);
+        
+//        GuideLayer* layerGuide = GuideLayer::create();
+//        this->addChild(layerGuide);
         return true;
     }
     return false;

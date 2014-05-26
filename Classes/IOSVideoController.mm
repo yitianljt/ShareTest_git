@@ -90,7 +90,7 @@
         
         
         //  设置是否带控制条
-        movePlayer.controlStyle = MPMovieControlStyleNone;
+        movePlayer.controlStyle = MPMovieControlStyleEmbedded;
         [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(exitFullScreen:) name:MPMoviePlayerDidExitFullscreenNotification object:nil];
         
     }
