@@ -30,6 +30,12 @@ bool LayerGame::init()
         return false;
     }
     
+    CCLayerGradient* layer1 = CCLayerGradient::create(ccc4(160,210,210,255), ccc4(110,210,190,255), ccp(.0f, .0f));
+    addChild(layer1, 0);
+
+    
+    
+    /*
     
     CCLayerColor* layerBg = CCLayerColor::create(ccc4(0, 255, 255, 255), sizeWin.width, sizeWin.height);
     addChild(layerBg,0);
@@ -43,7 +49,7 @@ bool LayerGame::init()
     
     menu->setPosition(ccp(sizeWin.width/2, sizeWin.height/2));
     this->addChild(menu);
-    
+    */
     
     
     
