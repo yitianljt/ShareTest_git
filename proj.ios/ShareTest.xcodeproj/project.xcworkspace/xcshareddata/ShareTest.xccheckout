@@ -5,13 +5,15 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>15A3E77E-6265-421B-B7CD-5761314F2F46</string>
+	<string>F558682E-165D-4020-8243-B26DEE074A40</string>
 	<key>IDESourceControlProjectName</key>
 	<string>ShareTest</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>322B3F55-607F-4970-AB8D-90BC8F754962</key>
 		<string>ssh://gitlab.alibaba-inc.com/jintao.ljt/popcat_ios.git</string>
+		<key>CA5433C2-BFF7-4DFC-BBA8-B73D8060A37D</key>
+		<string>https://github.com/yitianljt/ShareTest_git.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>projects/ShareTest/proj.ios/ShareTest.xcodeproj/project.xcworkspace</string>
@@ -19,9 +21,11 @@
 	<dict>
 		<key>322B3F55-607F-4970-AB8D-90BC8F754962</key>
 		<string>../../../../..</string>
+		<key>CA5433C2-BFF7-4DFC-BBA8-B73D8060A37D</key>
+		<string>../../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>ssh://gitlab.alibaba-inc.com/jintao.ljt/popcat_ios.git</string>
+	<string>https://github.com/yitianljt/ShareTest_git.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>110</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
@@ -35,6 +39,14 @@
 			<string>322B3F55-607F-4970-AB8D-90BC8F754962</string>
 			<key>IDESourceControlWCCName</key>
 			<string>cocos2d-x-2.2.1</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>CA5433C2-BFF7-4DFC-BBA8-B73D8060A37D</string>
+			<key>IDESourceControlWCCName</key>
+			<string>ShareTest</string>
 		</dict>
 	</array>
 </dict>

@@ -1,0 +1,11 @@
+AppDelegate.cpp
+BaseComScene.cpp
+GameControl.cpp
+GuideLayer.cpp
+HelloWorldScene.cpp
+LayerGame.cpp
+LayerLaunch.cpp
+PlayVideo.cpp
+SceneGame.cpp
+SceneLaunch.cpp
+VideoPlatform.cpp

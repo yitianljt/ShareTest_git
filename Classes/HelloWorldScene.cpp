@@ -3,7 +3,7 @@
 USING_NS_CC;
 
 
-
+/*
 #if(CC_TARGET_PLATFORM == CC_PLATFORM_ANDROID)
 #include <jni.h>
 #include "android/log.h"
@@ -31,7 +31,7 @@ void share()
 
 
 #endif
-
+*/
 CCScene* HelloWorld::scene()
 {
     // 'scene' is an autorelease object

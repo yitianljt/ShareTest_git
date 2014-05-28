@@ -46,7 +46,7 @@
         
         if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone)
         {
-            movePlayer.view.frame=CGRectMake(-80,80, 480, 320);
+            movePlayer.view.frame=CGRectMake(0,0, 480, 320);
         }
         else if([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad)
         {
@@ -116,13 +116,14 @@
     if (!TargetLayer) {
         return;
     }
+    /*
     TargetLayer->removeAllChildrenWithCleanup(true);
     TargetLayer->removeFromParent();
     
     CCScene * scene =CCScene::create();
     scene->addChild(TargetLayer,10);
     CCDirector::sharedDirector()->replaceScene(scene);
-    
+    */
     
 }
 //播放开始
@@ -166,6 +167,7 @@
         if (!TargetLayer) {
             return;
         }
+        return ;
         TargetLayer->removeAllChildrenWithCleanup(true);
         TargetLayer->removeFromParent();
         CCScene * scene =CCScene::create();

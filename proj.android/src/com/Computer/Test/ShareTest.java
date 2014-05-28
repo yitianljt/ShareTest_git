@@ -26,6 +26,8 @@ package com.Computer.Test;
 import org.cocos2dx.lib.Cocos2dxActivity;
 import org.cocos2dx.lib.Cocos2dxGLSurfaceView;
 
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 
 public class ShareTest extends Cocos2dxActivity{
@@ -48,7 +50,7 @@ public class ShareTest extends Cocos2dxActivity{
     
     
     
-    
+    /*
     public static void Share() {
     	  new Thread(new Runnable() {
     	   public void run() {
@@ -65,4 +67,6 @@ public class ShareTest extends Cocos2dxActivity{
     	   }
     	  }).start();
     	 }
+    	 
+    	 */
 }
