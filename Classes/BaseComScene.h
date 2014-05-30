@@ -27,4 +27,13 @@ public:
     
 };
 
+/*
+cocos2d::CCPoint BSMiddlePos(cocos2d::CCNode* pNode) {
+    return ccp(pNode->getContentSize().width/2, pNode->getContentSize().height/2);
+}
+
+
+cocos2d::CCSize BSWinSize() {
+    return cocos2d::CCDirector::sharedDirector()->getWinSize();
+}*/
 #endif /* defined(__ShareTest__BaseCommon__) */

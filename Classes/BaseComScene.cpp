@@ -25,3 +25,5 @@ BaseComScene::~BaseComScene()
         CCNotificationCenter::sharedNotificationCenter()->removeObserver(this, value.c_str());
     }
 }
+
+

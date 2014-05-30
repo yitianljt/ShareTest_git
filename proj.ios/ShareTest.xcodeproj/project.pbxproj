@@ -233,7 +233,17 @@
 		379BB9D317F03F3700829B88 /* GUIReader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 379BB99117F03F3700829B88 /* GUIReader.cpp */; };
 		379BB9D417F03F3700829B88 /* SceneReader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 379BB99317F03F3700829B88 /* SceneReader.cpp */; };
 		7855E0E1153FEF240059DD9A /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 7855E0DF153FEF240059DD9A /* Default.png */; };
-		A9314A741935C469008BE405 /* PlayVideo_android.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A9314A731935C469008BE405 /* PlayVideo_android.cpp */; };
+		A9314A7D1936126F008BE405 /* blockBottom.png in Resources */ = {isa = PBXBuildFile; fileRef = A9314A7B1936126F008BE405 /* blockBottom.png */; };
+		A9314A7E1936126F008BE405 /* blockTop.png in Resources */ = {isa = PBXBuildFile; fileRef = A9314A7C1936126F008BE405 /* blockTop.png */; };
+		A9314A8D19361DC8008BE405 /* GroundLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A9314A8B19361DC8008BE405 /* GroundLayer.cpp */; };
+		A9314A921936294E008BE405 /* SpriteRole.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A9314A901936294E008BE405 /* SpriteRole.cpp */; };
+		A9314A9719362F19008BE405 /* VisibleRect.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A9314A9519362F19008BE405 /* VisibleRect.cpp */; };
+		A9314A9B19363C1A008BE405 /* SpriteRunner.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A9314A9919363C1A008BE405 /* SpriteRunner.cpp */; };
+		A9314A9E1936937C008BE405 /* player.png in Resources */ = {isa = PBXBuildFile; fileRef = A9314A9C1936937C008BE405 /* player.png */; };
+		A9314A9F1936937C008BE405 /* playerBlink.png in Resources */ = {isa = PBXBuildFile; fileRef = A9314A9D1936937C008BE405 /* playerBlink.png */; };
+		A9314AA1193694C1008BE405 /* player@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A9314AA0193694C1008BE405 /* player@2x.png */; };
+		A9314AA419369C7B008BE405 /* CommonTool.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A9314AA219369C7B008BE405 /* CommonTool.cpp */; };
+		A9314AB3193764D1008BE405 /* SpriteBlock.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A9314AB1193764D1008BE405 /* SpriteBlock.cpp */; };
 		A9A782231928C5B5001D1936 /* GameControl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A9A782211928C5B5001D1936 /* GameControl.cpp */; };
 		A9A782271928C5FB001D1936 /* BaseComScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A9A782251928C5FB001D1936 /* BaseComScene.cpp */; };
 		A9A7822C1928C9BD001D1936 /* SceneLaunch.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A9A7822A1928C9BD001D1936 /* SceneLaunch.cpp */; };
@@ -745,6 +755,23 @@
 		379BB99417F03F3700829B88 /* SceneReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SceneReader.h; sourceTree = "<group>"; };
 		7855E0DF153FEF240059DD9A /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = SOURCE_ROOT; };
 		A9314A731935C469008BE405 /* PlayVideo_android.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PlayVideo_android.cpp; path = ../Classes/PlayVideo_android.cpp; sourceTree = "<group>"; };
+		A9314A7B1936126F008BE405 /* blockBottom.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blockBottom.png; sourceTree = "<group>"; };
+		A9314A7C1936126F008BE405 /* blockTop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blockTop.png; sourceTree = "<group>"; };
+		A9314A8B19361DC8008BE405 /* GroundLayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = GroundLayer.cpp; path = ../Classes/GroundLayer.cpp; sourceTree = "<group>"; };
+		A9314A8C19361DC8008BE405 /* GroundLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GroundLayer.h; path = ../Classes/GroundLayer.h; sourceTree = "<group>"; };
+		A9314A901936294E008BE405 /* SpriteRole.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = SpriteRole.cpp; path = ../Classes/SpriteRole.cpp; sourceTree = "<group>"; };
+		A9314A911936294E008BE405 /* SpriteRole.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SpriteRole.h; path = ../Classes/SpriteRole.h; sourceTree = "<group>"; };
+		A9314A9519362F19008BE405 /* VisibleRect.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = VisibleRect.cpp; path = ../Classes/VisibleRect.cpp; sourceTree = "<group>"; };
+		A9314A9619362F19008BE405 /* VisibleRect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VisibleRect.h; path = ../Classes/VisibleRect.h; sourceTree = "<group>"; };
+		A9314A9919363C1A008BE405 /* SpriteRunner.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = SpriteRunner.cpp; path = ../Classes/SpriteRunner.cpp; sourceTree = "<group>"; };
+		A9314A9A19363C1A008BE405 /* SpriteRunner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SpriteRunner.h; path = ../Classes/SpriteRunner.h; sourceTree = "<group>"; };
+		A9314A9C1936937C008BE405 /* player.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = player.png; sourceTree = "<group>"; };
+		A9314A9D1936937C008BE405 /* playerBlink.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = playerBlink.png; sourceTree = "<group>"; };
+		A9314AA0193694C1008BE405 /* player@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "player@2x.png"; sourceTree = "<group>"; };
+		A9314AA219369C7B008BE405 /* CommonTool.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CommonTool.cpp; path = ../Classes/CommonTool.cpp; sourceTree = "<group>"; };
+		A9314AA319369C7B008BE405 /* CommonTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CommonTool.h; path = ../Classes/CommonTool.h; sourceTree = "<group>"; };
+		A9314AB1193764D1008BE405 /* SpriteBlock.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = SpriteBlock.cpp; path = ../Classes/SpriteBlock.cpp; sourceTree = "<group>"; };
+		A9314AB2193764D1008BE405 /* SpriteBlock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SpriteBlock.h; path = ../Classes/SpriteBlock.h; sourceTree = "<group>"; };
 		A9A782211928C5B5001D1936 /* GameControl.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = GameControl.cpp; path = ../Classes/GameControl.cpp; sourceTree = "<group>"; };
 		A9A782221928C5B5001D1936 /* GameControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GameControl.h; path = ../Classes/GameControl.h; sourceTree = "<group>"; };
 		A9A782251928C5FB001D1936 /* BaseComScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = BaseComScene.cpp; path = ../Classes/BaseComScene.cpp; sourceTree = "<group>"; };
@@ -1307,6 +1334,7 @@
 		15AA9C4015B7EC450033D6C2 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				A9314A9319362959008BE405 /* Role */,
 				A9A782291928C9A3001D1936 /* GameLaunch */,
 				A9A782281928C97C001D1936 /* GameScene */,
 				A9A782241928C5E8001D1936 /* Common */,
@@ -1761,6 +1789,11 @@
 		78C7DDAA14EBA5050085D0C2 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				A9314AA0193694C1008BE405 /* player@2x.png */,
+				A9314A9C1936937C008BE405 /* player.png */,
+				A9314A9D1936937C008BE405 /* playerBlink.png */,
+				A9314A7B1936126F008BE405 /* blockBottom.png */,
+				A9314A7C1936126F008BE405 /* blockTop.png */,
 				A9A7829B1931C730001D1936 /* HTP1_4.png */,
 				A9A7829C1931C730001D1936 /* HTP2_4.png */,
 				A9A7829D1931C730001D1936 /* HTP3_4.png */,
@@ -1780,12 +1813,29 @@
 			path = ../Resources;
 			sourceTree = "<group>";
 		};
+		A9314A9319362959008BE405 /* Role */ = {
+			isa = PBXGroup;
+			children = (
+				A9314A901936294E008BE405 /* SpriteRole.cpp */,
+				A9314A911936294E008BE405 /* SpriteRole.h */,
+				A9314A9919363C1A008BE405 /* SpriteRunner.cpp */,
+				A9314A9A19363C1A008BE405 /* SpriteRunner.h */,
+				A9314AB1193764D1008BE405 /* SpriteBlock.cpp */,
+				A9314AB2193764D1008BE405 /* SpriteBlock.h */,
+			);
+			name = Role;
+			sourceTree = "<group>";
+		};
 		A9A782241928C5E8001D1936 /* Common */ = {
 			isa = PBXGroup;
 			children = (
 				A9A782251928C5FB001D1936 /* BaseComScene.cpp */,
 				A9A782261928C5FB001D1936 /* BaseComScene.h */,
 				A9A78287193021ED001D1936 /* Common.h */,
+				A9314A9519362F19008BE405 /* VisibleRect.cpp */,
+				A9314A9619362F19008BE405 /* VisibleRect.h */,
+				A9314AA219369C7B008BE405 /* CommonTool.cpp */,
+				A9314AA319369C7B008BE405 /* CommonTool.h */,
 			);
 			name = Common;
 			sourceTree = "<group>";
@@ -1805,6 +1855,8 @@
 				A9A78290193084F9001D1936 /* PlayVideo.h */,
 				A9A782A11931C761001D1936 /* GuideLayer.cpp */,
 				A9A782A21931C761001D1936 /* GuideLayer.h */,
+				A9314A8B19361DC8008BE405 /* GroundLayer.cpp */,
+				A9314A8C19361DC8008BE405 /* GroundLayer.h */,
 			);
 			name = GameScene;
 			sourceTree = "<group>";
@@ -1914,13 +1966,18 @@
 				D4EF94A015BD2D9800D803EB /* Icon-144.png in Resources */,
 				D41A0AD1160F154A004552AE /* Default-568h@2x.png in Resources */,
 				A9A7829919309515001D1936 /* opening_video.mp4 in Resources */,
+				A9314AA1193694C1008BE405 /* player@2x.png in Resources */,
+				A9314A7E1936126F008BE405 /* blockTop.png in Resources */,
 				A9A7829E1931C730001D1936 /* HTP1_4.png in Resources */,
 				D446FD6E16102124000ADA7B /* Default@2x.png in Resources */,
 				15A3D9961682F7F9002FB0C5 /* CMakeLists.txt in Resources */,
 				1AFAF8BC16D35E4900DB1158 /* CloseNormal.png in Resources */,
+				A9314A9E1936937C008BE405 /* player.png in Resources */,
 				1AFAF8BD16D35E4900DB1158 /* CloseSelected.png in Resources */,
 				1AFAF8BE16D35E4900DB1158 /* HelloWorld.png in Resources */,
+				A9314A9F1936937C008BE405 /* playerBlink.png in Resources */,
 				379BB9CC17F03F3700829B88 /* json_internalarray.inl in Resources */,
+				A9314A7D1936126F008BE405 /* blockBottom.png in Resources */,
 				A9A782A01931C730001D1936 /* HTP3_4.png in Resources */,
 				A9A7829F1931C730001D1936 /* HTP2_4.png in Resources */,
 				379BB9CD17F03F3700829B88 /* json_internalmap.inl in Resources */,
@@ -2038,7 +2095,9 @@
 				15A3DA451682F826002FB0C5 /* CCParticleSystemQuadLoader.cpp in Sources */,
 				15A3DA461682F826002FB0C5 /* CCScale9SpriteLoader.cpp in Sources */,
 				15A3DA471682F826002FB0C5 /* CCScrollViewLoader.cpp in Sources */,
+				A9314AA419369C7B008BE405 /* CommonTool.cpp in Sources */,
 				15A3DA481682F826002FB0C5 /* CCSpriteLoader.cpp in Sources */,
+				A9314A921936294E008BE405 /* SpriteRole.cpp in Sources */,
 				15A3DA491682F826002FB0C5 /* CCControl.cpp in Sources */,
 				15A3DA4A1682F826002FB0C5 /* CCControlButton.cpp in Sources */,
 				15A3DA4B1682F826002FB0C5 /* CCControlColourPicker.cpp in Sources */,
@@ -2059,12 +2118,14 @@
 				15A3DA5B1682F826002FB0C5 /* CCTableView.cpp in Sources */,
 				15A3DA5C1682F826002FB0C5 /* CCTableViewCell.cpp in Sources */,
 				15A3DA5D1682F826002FB0C5 /* HttpClient.cpp in Sources */,
+				A9314A9719362F19008BE405 /* VisibleRect.cpp in Sources */,
 				15A3DA5E1682F826002FB0C5 /* CCPhysicsDebugNode.cpp in Sources */,
 				15A3DA5F1682F826002FB0C5 /* CCPhysicsSprite.cpp in Sources */,
 				15A3DAEB1682F8A6002FB0C5 /* CDAudioManager.m in Sources */,
 				15A3DAEC1682F8A6002FB0C5 /* CDOpenALSupport.m in Sources */,
 				15A3DAED1682F8A6002FB0C5 /* CocosDenshion.m in Sources */,
 				15A3DAEE1682F8A6002FB0C5 /* SimpleAudioEngine.mm in Sources */,
+				A9314AB3193764D1008BE405 /* SpriteBlock.cpp in Sources */,
 				15A3DAEF1682F8A6002FB0C5 /* SimpleAudioEngine_objc.m in Sources */,
 				1A27573F1697CF2B00504026 /* CCEditBoxImplAndroid.cpp in Sources */,
 				1AFAF8B716D35DE700DB1158 /* AppDelegate.cpp in Sources */,
@@ -2093,6 +2154,7 @@
 				1A8F3B80175E05DA00049216 /* Slot.cpp in Sources */,
 				1A8F3B81175E05DA00049216 /* SlotData.cpp in Sources */,
 				1A8F3B82175E05DA00049216 /* spine-cocos2dx.cpp in Sources */,
+				A9314A9B19363C1A008BE405 /* SpriteRunner.cpp in Sources */,
 				1AB87035175E0A84005D39BF /* WebSocket.cpp in Sources */,
 				1A9CE8781765A12C000E3062 /* AssetsManager.cpp in Sources */,
 				379BB99517F03F3700829B88 /* CCActionFrame.cpp in Sources */,
@@ -2108,6 +2170,7 @@
 				379BB99D17F03F3700829B88 /* CCArmature.cpp in Sources */,
 				379BB99E17F03F3700829B88 /* CCBone.cpp in Sources */,
 				379BB99F17F03F3700829B88 /* CCDatas.cpp in Sources */,
+				A9314A8D19361DC8008BE405 /* GroundLayer.cpp in Sources */,
 				379BB9A017F03F3700829B88 /* CCBatchNode.cpp in Sources */,
 				379BB9A117F03F3700829B88 /* CCDecorativeDisplay.cpp in Sources */,
 				379BB9A217F03F3700829B88 /* CCDisplayFactory.cpp in Sources */,
@@ -2147,7 +2210,6 @@
 				379BB9C517F03F3700829B88 /* UILabelBMFont.cpp in Sources */,
 				379BB9C617F03F3700829B88 /* UILoadingBar.cpp in Sources */,
 				379BB9C717F03F3700829B88 /* UISlider.cpp in Sources */,
-				A9314A741935C469008BE405 /* PlayVideo_android.cpp in Sources */,
 				379BB9C817F03F3700829B88 /* UISwitch.cpp in Sources */,
 				379BB9C917F03F3700829B88 /* UITextField.cpp in Sources */,
 				379BB9CA17F03F3700829B88 /* CSContentJsonDictionary.cpp in Sources */,
@@ -2178,10 +2240,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+				CLANG_CXX_LIBRARY = "libc++";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				GCC_C_LANGUAGE_STANDARD = c11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -2209,11 +2274,12 @@
 					"\"$(SRCROOT)/../../../cocos2dx/platform/ios/Simulation\"",
 				);
 				INFOPLIST_FILE = Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LIBRARY_SEARCH_PATHS = (
 					"\"$(SRCROOT)/../../../cocos2dx/platform/third_party/ios/libraries\"",
 					"\"$(SRCROOT)/../../../external/libwebsockets/ios/lib\"",
 				);
+				ONLY_ACTIVE_ARCH = NO;
 				OTHER_CFLAGS = "-O2";
 				PRODUCT_NAME = ShareTest;
 				PROVISIONING_PROFILE = "";
@@ -2221,7 +2287,7 @@
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				USER_HEADER_SEARCH_PATHS = "";
-				VALID_ARCHS = "armv6 armv7 i386";
+				VALID_ARCHS = armv7;
 			};
 			name = Debug;
 		};
@@ -2229,10 +2295,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+				CLANG_CXX_LIBRARY = "libc++";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				GCC_C_LANGUAGE_STANDARD = c11;
 				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -2258,11 +2327,12 @@
 					"\"$(SRCROOT)/../../../cocos2dx/platform/ios/Simulation\"",
 				);
 				INFOPLIST_FILE = Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LIBRARY_SEARCH_PATHS = (
 					"\"$(SRCROOT)/../../../cocos2dx/platform/third_party/ios/libraries\"",
 					"\"$(SRCROOT)/../../../external/libwebsockets/ios/lib\"",
 				);
+				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_NAME = ShareTest;
 				PROVISIONING_PROFILE = "";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
@@ -2270,6 +2340,7 @@
 				TARGETED_DEVICE_FAMILY = "1,2";
 				USER_HEADER_SEARCH_PATHS = "";
 				VALIDATE_PRODUCT = YES;
+				VALID_ARCHS = armv7;
 			};
 			name = Release;
 		};
