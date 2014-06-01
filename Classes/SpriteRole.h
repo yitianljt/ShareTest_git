@@ -26,7 +26,7 @@ public:
     void transformBoxes();
     //boundingbox
     ColliderBox createBoundingBoxWith(cocos2d::CCPoint posOrigin, cocos2d::CCSize szSize);
-    
+    ColliderBox getCollderBox();
     
 protected:
     cocos2d::CCArray* m_aActions;

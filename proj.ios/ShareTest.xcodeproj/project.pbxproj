@@ -244,6 +244,7 @@
 		A9314AA1193694C1008BE405 /* player@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A9314AA0193694C1008BE405 /* player@2x.png */; };
 		A9314AA419369C7B008BE405 /* CommonTool.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A9314AA219369C7B008BE405 /* CommonTool.cpp */; };
 		A9314AB3193764D1008BE405 /* SpriteBlock.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A9314AB1193764D1008BE405 /* SpriteBlock.cpp */; };
+		A9A507041938EDFB00267F82 /* testoc.plist in Resources */ = {isa = PBXBuildFile; fileRef = A9A507031938EDFB00267F82 /* testoc.plist */; };
 		A9A782231928C5B5001D1936 /* GameControl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A9A782211928C5B5001D1936 /* GameControl.cpp */; };
 		A9A782271928C5FB001D1936 /* BaseComScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A9A782251928C5FB001D1936 /* BaseComScene.cpp */; };
 		A9A7822C1928C9BD001D1936 /* SceneLaunch.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A9A7822A1928C9BD001D1936 /* SceneLaunch.cpp */; };
@@ -772,6 +773,7 @@
 		A9314AA319369C7B008BE405 /* CommonTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CommonTool.h; path = ../Classes/CommonTool.h; sourceTree = "<group>"; };
 		A9314AB1193764D1008BE405 /* SpriteBlock.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = SpriteBlock.cpp; path = ../Classes/SpriteBlock.cpp; sourceTree = "<group>"; };
 		A9314AB2193764D1008BE405 /* SpriteBlock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SpriteBlock.h; path = ../Classes/SpriteBlock.h; sourceTree = "<group>"; };
+		A9A507031938EDFB00267F82 /* testoc.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = testoc.plist; sourceTree = "<group>"; };
 		A9A782211928C5B5001D1936 /* GameControl.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = GameControl.cpp; path = ../Classes/GameControl.cpp; sourceTree = "<group>"; };
 		A9A782221928C5B5001D1936 /* GameControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GameControl.h; path = ../Classes/GameControl.h; sourceTree = "<group>"; };
 		A9A782251928C5FB001D1936 /* BaseComScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = BaseComScene.cpp; path = ../Classes/BaseComScene.cpp; sourceTree = "<group>"; };
@@ -1789,6 +1791,7 @@
 		78C7DDAA14EBA5050085D0C2 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				A9A507031938EDFB00267F82 /* testoc.plist */,
 				A9314AA0193694C1008BE405 /* player@2x.png */,
 				A9314A9C1936937C008BE405 /* player.png */,
 				A9314A9D1936937C008BE405 /* playerBlink.png */,
@@ -1974,6 +1977,7 @@
 				1AFAF8BC16D35E4900DB1158 /* CloseNormal.png in Resources */,
 				A9314A9E1936937C008BE405 /* player.png in Resources */,
 				1AFAF8BD16D35E4900DB1158 /* CloseSelected.png in Resources */,
+				A9A507041938EDFB00267F82 /* testoc.plist in Resources */,
 				1AFAF8BE16D35E4900DB1158 /* HelloWorld.png in Resources */,
 				A9314A9F1936937C008BE405 /* playerBlink.png in Resources */,
 				379BB9CC17F03F3700829B88 /* json_internalarray.inl in Resources */,

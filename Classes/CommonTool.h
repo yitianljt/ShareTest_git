@@ -33,5 +33,8 @@ protected:
 };
 
 
+cocos2d::CCSize BSWinSize();
+
+
 
 #endif /* defined(__ShareTest__CommonTool__) */

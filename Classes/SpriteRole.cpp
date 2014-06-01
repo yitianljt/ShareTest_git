@@ -55,4 +55,10 @@ ColliderBox SpriteRole::createBoundingBoxWith(CCPoint posOrigin, CCSize szSize){
     return boundingBox;
 }
 
+ColliderBox SpriteRole::getCollderBox()
+{
+    return m_sColliderBox;
+}
+
+
 

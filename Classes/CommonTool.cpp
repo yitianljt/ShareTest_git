@@ -57,3 +57,8 @@ void CCCallLambda::update(float time) {
     CC_UNUSED_PARAM(time);
     _callback();
 }
+
+
+CCSize BSWinSize() {
+    return CCDirector::sharedDirector()->getWinSize();
+}

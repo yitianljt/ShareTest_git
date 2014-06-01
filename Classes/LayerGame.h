@@ -32,7 +32,8 @@ public:
 
     void start();
     void stop();
-    
+    void addBlock(float fDelta);
+
     void update(float fDelta);
     
     virtual bool ccTouchBegan(cocos2d::CCTouch* pTouch, cocos2d::CCEvent* pEvent);
@@ -44,7 +45,9 @@ public:
     void callbackStart(cocos2d::CCObject* obj);
     
 private:
-    SpriteRunner* spRuner;
+    SpriteRunner* _spRuner;
+    cocos2d::CCSpriteBatchNode* m_pSpriteBatchNode;
+
     
     
 };

@@ -39,6 +39,7 @@ public:
     void jump();
     //void shooted();
     void injured();
+    void dead();
     
     CREATE_FUNC(SpriteRunner);
     CC_SYNTHESIZE(float, m_fVelocity, Velocity);

@@ -14,6 +14,9 @@
 #include "GroundLayer.h"
 #include "CommonTool.h"
 #include "SpriteRunner.h"
+#include "SpriteBlock.h"
+#include "CommonTool.h"
+#include <vector>
 
 USING_NS_CC;
 
@@ -23,7 +26,9 @@ COM_CREATE_FUNC_IMPL(LayerGame);
 
 
 LayerGame::LayerGame()
-{}
+{
+    m_pSpriteBatchNode = NULL;
+}
 LayerGame::~LayerGame(){}
 
 bool LayerGame::init()
@@ -39,13 +44,19 @@ bool LayerGame::init()
     GroundLayer* layerGround = GroundLayer::create();
     addChild(layerGround);
     
-    spRuner = SpriteRunner::create();
+    _spRuner = SpriteRunner::create();
     
-    spRuner->setPosition(ccp(200,400));
-    addChild(spRuner);
+    _spRuner->setPosition(ccp(200,400));
+    addChild(_spRuner);
     
     this->setTouchEnabled(true);
     CCDirector::sharedDirector()->getTouchDispatcher()->addTargetedDelegate(this, 0, true);
+    
+    //this->m_pSpriteBatchNode=CCSpriteBatchNode::create("main.png", 100);
+
+    this->m_pSpriteBatchNode = CCSpriteBatchNode::create("player@2x.png", 100);
+    addChild(m_pSpriteBatchNode);
+    start();
 
     /*
     
@@ -88,7 +99,7 @@ void LayerGame::callbackStart(CCObject* obj)
 void LayerGame::start()
 {
     this->schedule(schedule_selector(LayerGame::update), 0.1f);
-    //this->schedule(schedule_selector(LayerGame::addArrows), 0.2f);
+    this->schedule(schedule_selector(LayerGame::addBlock), 3.0f );
 }
 
 void LayerGame::stop()
@@ -99,6 +110,20 @@ void LayerGame::stop()
 
 void LayerGame::update(float fDelta)
 {
+    
+    CCArray* blockNodes = m_pSpriteBatchNode->getChildren();
+    CCObject* child;
+    CCARRAY_FOREACH(blockNodes,child )
+    {
+        SpriteBlock* spBlock = dynamic_cast<SpriteBlock*>(child);
+        if (spBlock &&spBlock->getCollderBox().actual.intersectsRect(_spRuner->getCollderBox().actual)) {
+        _spRuner->dead();
+        
+        }
+    }
+    
+    
+    
     /*
     CCLog("%f  =%f",spRuner->getPositionY(),spRuner->getVelocity());
     
@@ -128,7 +153,7 @@ bool LayerGame::ccTouchBegan(cocos2d::CCTouch* pTouch, cocos2d::CCEvent* pEvent)
 
 void LayerGame::ccTouchEnded(cocos2d::CCTouch *pTouch, cocos2d::CCEvent *pEvent)
 {
-    spRuner->jump();
+    _spRuner->jump();
 }
 
 void LayerGame::ccTouchMoved(cocos2d::CCTouch *pTouch, cocos2d::CCEvent *pEvent)
@@ -136,4 +161,12 @@ void LayerGame::ccTouchMoved(cocos2d::CCTouch *pTouch, cocos2d::CCEvent *pEvent)
     
 }
 
+
+void LayerGame::addBlock(float fDelta)
+{
+    SpriteBlock* spBlock = SpriteBlock::create();
+    m_pSpriteBatchNode->addChild(spBlock);
+    spBlock->setPosition(ccp(BSWinSize().width, 400));
+    spBlock->move(-3.0f);
+}
 

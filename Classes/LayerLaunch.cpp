@@ -28,7 +28,7 @@ bool LayerLaunch::init()
     }
     
 
-    CCLayerColor* layerBg = CCLayerColor::create(ccc4(255, 255, 255, 255), sizeWin.width, sizeWin.height);
+    CCLayerColor* layerBg = CCLayerColor::create(ccc4(255, 255, 0, 0), sizeWin.width, sizeWin.height);
 
     addChild(layerBg,0);
     CCSprite* spNormal = CCSprite::create();

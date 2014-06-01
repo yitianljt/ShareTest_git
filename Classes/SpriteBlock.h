@@ -21,11 +21,14 @@ public:
     virtual bool init();
     
     CREATE_FUNC(SpriteBlock);
+    void move(float fd);
+    void update();
 
     
     
 private:
-    
+    void move();
+    float fSpeed;
     
 };
 #endif /* defined(__ShareTest__SpriteBlock__) */

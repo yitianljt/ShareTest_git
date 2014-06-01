@@ -28,7 +28,7 @@ SpriteRunner::~SpriteRunner()
 
 bool SpriteRunner::init() {
     if (initWithFile("player@2x.png")) {
-        this->m_fCenterToSides = this->getContentSize().width/2;
+        this->m_fCenterToSides = this->getContentSize().width/2-13;
         this->m_fCenterToBottom = this->getContentSize().height/2;
         this->m_sColliderBox = createBoundingBoxWith(CCPoint(-this->m_fCenterToSides, -this->m_fCenterToBottom), CCSize(this->m_fCenterToSides*2, this->m_fCenterToBottom*2));
         
@@ -67,6 +67,13 @@ void SpriteRunner::onFadeOut() {
     }
     this->removeFromParent();
 }*/
+
+void SpriteRunner::dead()
+{
+    CCParticleSystem* m_emitter1 = CCParticleSystemQuad::create("testoc.plist");
+    //addChild(m_emitter1);
+    this->getParent()->addChild(m_emitter1);
+}
 
 
 
