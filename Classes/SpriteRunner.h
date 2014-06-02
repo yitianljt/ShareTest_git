@@ -19,7 +19,7 @@ typedef enum {
     
 }RunerState;
 
-class SpriteRunner:public SpriteRole
+class SpriteRunner:public cocos2d::CCSprite
 {
 public:
     SpriteRunner();

@@ -13,7 +13,7 @@
 #include "SpriteRole.h"
 #include "cocos2d.h"
 
-class SpriteBlock : public SpriteRole
+class SpriteBlock : public cocos2d::CCSprite
 {
 public:
     SpriteBlock();

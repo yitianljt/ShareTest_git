@@ -43,6 +43,9 @@ public:
 
     
     void callbackStart(cocos2d::CCObject* obj);
+    bool isCollison(cocos2d::CCSprite* sp1,cocos2d::CCSprite* sp2);
+    
+    void gameover();
     
 private:
     SpriteRunner* _spRuner;

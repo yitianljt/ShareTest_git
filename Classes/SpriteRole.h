@@ -27,11 +27,12 @@ public:
     //boundingbox
     ColliderBox createBoundingBoxWith(cocos2d::CCPoint posOrigin, cocos2d::CCSize szSize);
     ColliderBox getCollderBox();
+    CC_SYNTHESIZE(float, m_fCenterToSides, CenterToSider);
+    CC_SYNTHESIZE(float, m_fCenterToBottom, CenterToBottom);
+
     
 protected:
     cocos2d::CCArray* m_aActions;
-    float m_fCenterToSides;
-    float m_fCenterToBottom;
     ColliderBox m_sColliderBox;
 
 

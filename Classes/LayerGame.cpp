@@ -47,6 +47,7 @@ bool LayerGame::init()
     _spRuner = SpriteRunner::create();
     
     _spRuner->setPosition(ccp(200,400));
+    _spRuner->setRotation(45);
     addChild(_spRuner);
     
     this->setTouchEnabled(true);
@@ -57,7 +58,10 @@ bool LayerGame::init()
     this->m_pSpriteBatchNode = CCSpriteBatchNode::create("player@2x.png", 100);
     addChild(m_pSpriteBatchNode);
     start();
-
+    
+    glLineWidth( 5.0f );
+    ccDrawColor4F(255,0,0,40);
+    ccDrawLine(ccp(0, 0), ccp(200, 400));
     /*
     
     CCLayerColor* layerBg = CCLayerColor::create(ccc4(0, 255, 255, 255), sizeWin.width, sizeWin.height);
@@ -116,9 +120,9 @@ void LayerGame::update(float fDelta)
     CCARRAY_FOREACH(blockNodes,child )
     {
         SpriteBlock* spBlock = dynamic_cast<SpriteBlock*>(child);
-        if (spBlock &&spBlock->getCollderBox().actual.intersectsRect(_spRuner->getCollderBox().actual)) {
-        _spRuner->dead();
-        
+        if (spBlock && isCollison(spBlock, _spRuner)) {
+            _spRuner->dead();
+
         }
     }
     
@@ -165,8 +169,40 @@ void LayerGame::ccTouchMoved(cocos2d::CCTouch *pTouch, cocos2d::CCEvent *pEvent)
 void LayerGame::addBlock(float fDelta)
 {
     SpriteBlock* spBlock = SpriteBlock::create();
+    //spBlock->setRotation(45);
+    
     m_pSpriteBatchNode->addChild(spBlock);
     spBlock->setPosition(ccp(BSWinSize().width, 400));
     spBlock->move(-3.0f);
+}
+
+
+bool LayerGame::isCollison(CCSprite* spRuner,CCSprite* spBlock)
+{
+//    if ((sp1->getPositionX()-sp2->getPositionX()) * (sp1->getPositionX()-sp2->getPositionX()) < (sp1->getPositionY()- sp2->getPositionY())* (sp1->getPositionY()-sp2->getPositionY()) < (sp1->getCollderBox().actual.size.width)*(sp1->getCollderBox().actual.size.width)) {
+//        CCLOG("Test");
+//        return true;
+//    }
+    
+    
+    CCLOG("pt.x=%f,pt.y=%f, w=%f ,h=%f",spRuner->boundingBox().origin.x,spRuner->boundingBox().origin.y,spRuner->boundingBox().size.width,spRuner->boundingBox().size.height);
+    
+    CCLOG("pt.x=%f,pt.y=%f, w=%f ,h=%f",spBlock->boundingBox().origin.x,spBlock->boundingBox().origin.y,spBlock->boundingBox().size.width,spBlock->boundingBox().size.height);
+    
+    if (spRuner->boundingBox().intersectsRect(spBlock->boundingBox()) )
+    {
+        _spRuner->dead();
+        gameover();
+    }
+    
+    
+    
+    return false;
+}
+
+
+void LayerGame::gameover()
+{
+    
 }
 

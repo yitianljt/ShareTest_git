@@ -28,11 +28,8 @@ SpriteRunner::~SpriteRunner()
 
 bool SpriteRunner::init() {
     if (initWithFile("player@2x.png")) {
-        this->m_fCenterToSides = this->getContentSize().width/2-13;
-        this->m_fCenterToBottom = this->getContentSize().height/2;
-        this->m_sColliderBox = createBoundingBoxWith(CCPoint(-this->m_fCenterToSides, -this->m_fCenterToBottom), CCSize(this->m_fCenterToSides*2, this->m_fCenterToBottom*2));
-        
-        // m_iState=kRunerWalk;
+        setAnchorPoint(ccp(0.5,0.5));
+        //this->setContentSize(CCSize(this->getContentSize().width-23,this->getContentSize().height-23));
         return true;
     }
     
